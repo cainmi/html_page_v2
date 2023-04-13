@@ -184,9 +184,12 @@ document.addEventListener('keydown', function(e) {
   // if desired key pressed, pause 
   // Replace Escape with the key you want to execute the pause function
   else if (e.key === "Escape") {
-    pause();
+    loop(false);
   // else do nothing
-  } else {}
+  } else 
+  {
+  loop(true)
+  }
 });
 
 // start the game
