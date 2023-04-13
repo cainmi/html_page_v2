@@ -117,7 +117,7 @@ function loop() {
 
   // draw apple
   context.fillStyle = 'red';
-  context.fillRect(apple.x, apple.y, grid-2, grid-2);
+  context.fillRect(apple.x, apple.y, grid-1, grid-1);
 
   // draw snake one cell at a time
   context.fillStyle = 'green';
@@ -185,6 +185,15 @@ document.addEventListener('keydown', function(e) {
 
 // start the game
 requestAnimationFrame(loop);
+    // adds an event listener to the document that listens for key presses
+document.addEventListener("keydown", function(e) {
+// if desired key pressed, pause 
+// Replace Escape with the key you want to execute the pause function
+  if (e.key === "Escape") {
+    pause();
+// else do nothing
+   } else {}
+});
 </script>
 </div>
         </body>
